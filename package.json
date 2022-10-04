@@ -1,0 +1,26 @@
+{
+  "name": "utility-tools-cli",
+  "version": "1.0.0",
+  "description": "This repo contains utility tools which makes life lil bit easier.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wasim7raja10/utility-tools-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wasim7raja10/utility-tools-cli/issues"
+  },
+  "homepage": "https://github.com/wasim7raja10/utility-tools-cli#readme",
+  "dependencies": {
+    "commander": "^9.4.1"
+  },
+  "bin": {
+    "util": "./index.js"
+  }
+}
