@@ -19,6 +19,8 @@ More features will be added.
 ![image](https://user-images.githubusercontent.com/42181953/194040544-07cd624f-550b-4a08-b039-2d5727ab429d.png)
 
 ## How to use
+1. `util ri <path>` to resize images in that path.
+2. `util rm <path> <old separator> <new separator>` to rename all the files replacing old separator with new separator in that.
 ![image](https://user-images.githubusercontent.com/31384539/194042645-f3b293e9-7793-45a9-bf73-d3ee83bd3899.png)
 
 
