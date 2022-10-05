@@ -13,7 +13,10 @@ class ResizeImage extends Command {
 
 		files.forEach(async (file) => {
 			try {
-				await sharp(join(pathInput, file))
+				const image = sharp(join(pathInput, file));
+				image[format]({ quality: 80 }); // set quality based on format
+
+				await image
 					.resize({ height: Number(height), width: Number(width) }) // resize dimension of image
 					.toFile(`${file.split(".")[0]}.${format}`); // changing the extension of file to given format
 			} catch (err) {
