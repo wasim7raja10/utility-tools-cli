@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/wasim7raja10/utility-tools-cli#readme",
   "dependencies": {
-    "commander": "^9.4.1"
+    "commander": "^9.4.1",
+    "sharp": "^0.31.1"
   },
   "bin": {
     "util": "./index.js"
