@@ -16,6 +16,7 @@ More features will be added.
 3. run `npm i` to install all dependencies.
 4. run `npm i -g .` to install this cli package locally
 5. running `util` should show the below result
+![image](https://user-images.githubusercontent.com/42181953/194040544-07cd624f-550b-4a08-b039-2d5727ab429d.png)
 
 # Hacktoberfest-2022 ✨✨
 
