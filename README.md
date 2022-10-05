@@ -18,6 +18,10 @@ More features will be added.
 5. running `util` should show the below result
 ![image](https://user-images.githubusercontent.com/42181953/194040544-07cd624f-550b-4a08-b039-2d5727ab429d.png)
 
+## How to use
+![image](https://user-images.githubusercontent.com/31384539/194042645-f3b293e9-7793-45a9-bf73-d3ee83bd3899.png)
+
+
 # Hacktoberfest-2022 ✨✨
 
 ![192114009-0830321a-d227-4a4d-8411-6c03b54d7ce6](https://user-images.githubusercontent.com/31384539/193418327-827ccd84-6bd1-435d-a128-1272edf53324.png)
