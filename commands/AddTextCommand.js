@@ -31,7 +31,7 @@ class AddText extends Command {
 
                     },
                   ])
-                  .toFile(file.split(".")[0] + ".webp");
+                  .toFile( file.split(".")[0] + "_watermark" + ".webp");
 		});
 		this.result = fs.readdirSync(pathInput);
 	}
