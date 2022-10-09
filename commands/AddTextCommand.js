@@ -10,27 +10,35 @@ class AddText extends Command {
   action(pathInput, text) {
     const temp = "/";
     const files = fs.readdirSync(pathInput);
-    // const text = "Watermark Image ";
-    const svgImage = `
-        <svg class="vg">
-        <style>
-        .vg{ height: 100px; width: 100%;}
-        .title { fill: #ffff; font-size: 70px; font-weight: bold; }
+    files.forEach(async file => {
+      try {
+        const image = sharp(pathInput + temp + file);
+        const metadata = await image.metadata(); // geeting metadata of image
+        const width = metadata.width / 2; // getting width of image
+        const height = metadata.height / 5;
+        const textFontSize =
+          text.length < 10 && metadata.width < 1000 ? width / 5 : width / 10; // setting font size of text
+
+        const svgImage = `
+        <svg width="${width}" height="${height}"  >
+        <style>   
+          .title { fill: #ffff; font-size: ${textFontSize}; font-weight: bold; }
         </style>
-        <text x="50%" y="50%" text-anchor="middle" class="title">${text}</text>
+        <text x="50%" y="50%" text-anchor="middle"  class="title">${text}</text>
         </svg>
         `;
-    const svgBuffer = Buffer.from(svgImage);
-
-    files.forEach(async file => {
-      await sharp(pathInput + temp + file)
-        .composite([
-          {
-            input: svgBuffer,
-            gravity: sharp.gravity.southeast,
-          },
-        ])
-        .toFile(file.split(".")[0] + "_watermark" + ".webp");
+        const svgBuffer = Buffer.from(svgImage); // converting svg to buffer
+        await image
+          .composite([
+            {
+              input: svgBuffer,
+              gravity: sharp.gravity.southeast,
+            },
+          ])
+          .toFile(file.split(".")[0] + "_watermark" + ".webp");
+      } catch (err) {
+        console.error(`Failed  ${err.message}`);
+      }
     });
     this.result = fs.readdirSync(pathInput);
   }
