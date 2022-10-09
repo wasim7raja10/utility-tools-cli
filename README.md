@@ -16,12 +16,14 @@ More features will be added.
 3. run `npm i` to install all dependencies.
 4. run `npm i -g .` to install this cli package locally
 5. running `util` should show the below result
+
 ![image](https://user-images.githubusercontent.com/42181953/194040544-07cd624f-550b-4a08-b039-2d5727ab429d.png)
 
 ## How to use
 1. `util ri <path> <width> <height> <format>` to resize images in that path.
 2. `util rm <path> <old separator> <new separator>` to rename all the files replacing old separator with new separator in that.
-![image](https://user-images.githubusercontent.com/31384539/194042645-f3b293e9-7793-45a9-bf73-d3ee83bd3899.png)
+
+![image](https://user-images.githubusercontent.com/31384539/194763796-bc9c7b1f-fc49-4910-b4e3-1622b42afe6c.png)
 
 
 # Hacktoberfest-2022 ✨✨
