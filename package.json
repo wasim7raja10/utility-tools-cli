@@ -4,7 +4,7 @@
   "description": "This repo contains utility tools which makes life lil bit easier.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
   },
   "bin": {
     "util": "./index.js"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
   }
 }

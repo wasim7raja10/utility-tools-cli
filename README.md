@@ -20,11 +20,11 @@ More features will be added.
 ![image](https://user-images.githubusercontent.com/42181953/194040544-07cd624f-550b-4a08-b039-2d5727ab429d.png)
 
 ## How to use
+
 1. `util ri <path> <width> <height> <format>` to resize images in that path.
 2. `util rm <path> <old separator> <new separator>` to rename all the files replacing old separator with new separator in that.
 
 ![image](https://user-images.githubusercontent.com/31384539/194763796-bc9c7b1f-fc49-4910-b4e3-1622b42afe6c.png)
-
 
 # Hacktoberfest-2022 ✨✨
 

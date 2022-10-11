@@ -10,7 +10,7 @@ class AddText extends Command {
   action(pathInput, text) {
     const temp = "/";
     const files = fs.readdirSync(pathInput);
-    files.forEach(async file => {
+    files.forEach(async (file) => {
       try {
         const image = sharp(pathInput + temp + file);
         const metadata = await image.metadata(); // geeting metadata of image
