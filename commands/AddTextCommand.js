@@ -35,12 +35,12 @@ class AddText extends Command {
               gravity: sharp.gravity.southeast,
             },
           ])
-          .toFile(file.split(".")[0] + "_watermark" + ".webp");
+          .toFile(`${pathInput}/${file.split(".")[0]}_watermark.webp`);
       } catch (err) {
         console.error(`Failed  ${err.message}`);
       }
     });
-    this.result = fs.readdirSync(pathInput);
+    this.result = "successful";
   }
 }
 
