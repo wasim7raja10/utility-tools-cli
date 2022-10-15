@@ -23,7 +23,7 @@ class ResizeImage extends Command {
 
         await image
           .resize({ height: Number(height), width: Number(width) }) // resize dimension of image
-          .toFile(`${file.split(".")[0]}.${format}`); // changing the extension of file to given format
+          .toFile(`${pathInput}/${file.split(".")[0]}.${format}`); // changing the extension of file to given format
       } catch (err) {
         console.error(`Failed to resize ${file} :: ${err.message}`);
       }
